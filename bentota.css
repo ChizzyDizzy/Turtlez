@@ -1,0 +1,612 @@
+/*main part*/
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    padding: 0;
+    background-color: #80707c;
+   
+}
+
+.banner{
+    width : 100%;
+    height : 109vh;
+    
+    background-image: linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)), url(Bentota.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.logo{
+    width:120px;
+    cursor:pointer;
+    float: left;
+    line-height: 200px;
+   
+
+
+}
+.wrapper{
+    width: 70px;
+    margin:auto;
+}
+.menu-area{
+    margin-top: 0px;
+}
+.menu-area ul{
+    background: none;
+    list-style: none;
+    position: relative;
+    text-transform: uppercase;
+}
+.menu-area ul li{
+    display: inline-block;
+
+}
+.menu-area ul li a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 5px 55px;
+    font-weight: bold;
+}
+.menu-area ul li:hover{
+    background: #0ae9e9d7;
+}
+.menu-area ul li:hover > ul{
+    display: block;
+}
+.menu-area ul ul{
+    display: none;
+    position: absolute;
+    top: 100%;
+    background: #219696;
+}
+.menu-area ul ul li{
+    position: relative;
+    display: block;
+    border-bottom: 1px solid #ffffff;
+}
+.menu-area ul ul ul{
+    position: absolute; 
+    left: 100%;
+    top: 0;
+}
+
+
+
+.Home-page-paragraph{
+    width: 100%;
+    position: absolute;
+    top:50%;
+    transform:translateY(-50%);
+    text-align: center;
+    color:rgb(10, 10, 10);
+}
+
+.Home-page-paragraph h1{
+    font-size: 70px;
+    margin-top: -20px;
+    padding-left: 80px;
+}
+
+.Home-page-paragraph p{
+    margin: 20px auto;
+    font-weight: 60px;
+    line-height: 25px;
+    padding-left: 80px;
+    font-size: 25px;
+    color: #969292;
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+  .scroll-down {
+    height: 70px;
+    width: 50px;
+    border: 2px solid rgb(204, 20, 158);
+    position: absolute;
+    left: 50%;
+    bottom: -250px;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  .scroll-down::before,
+  .scroll-down::after {
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    height: 10px;
+    width: 10px;
+    transform: translate(-50%, -100%) rotate(45deg);
+    border: 2px solid white;
+    border-top: transparent;
+    border-left: transparent;
+    animation: scroll-down 1s ease-in-out infinite;
+  }
+  .scroll-down::before {
+    top: 30%;
+    animation-delay: 0.3s;
+    /* animation: scroll-down 1s ease-in-out infinite; */
+
+  }
+
+@keyframes scroll-down {
+    0% {
+      /* top:20%; */
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    60% {
+      opacity: 1;
+    }
+    100% {
+      top: 90%;
+      opacity: 0;
+    }
+  }
+/*/*/*/ end of the first sec /*/*/*/
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+  }
+  
+  .containerbox img {
+    display: block;
+    width: 65%;
+    -webkit-transition: opacity 0.3s ease-out;
+    -o-transition: opacity 0.3s ease-out;
+    transition: opacity 0.3s ease-out;
+    padding-left: 75px;
+    height: 700px;
+  }
+  
+  img:hover {
+    opacity: 0.75;
+  }
+  
+  a, img {
+    border: none;
+    outline: none;
+  }
+  
+  .main {
+    padding: 5em 0;
+    width: 80%;
+    margin: 0 auto;
+    
+  }
+  
+  .main h1, h2, h3 {
+    color: #85367fb4;
+  }
+  
+  .main h1 {
+    font-size: 2em;
+    text-align: center;
+    font-weight: 500;
+    padding-left: 230px;
+  
+  }
+  
+  .main, h3 {
+    font-size: 1.3em;
+    margin: 2rem 0 0 0;
+    line-height: 0.5;
+    font-weight: 500;
+    padding-left: 250px;
+  }
+  .main, p{
+    padding-left: 55px;
+    justify-content: center;
+    align-items: center;
+  }
+  .gallery ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 100px;
+  }
+  
+  .gallery ul li {
+    padding-bottom: 1em;
+  }
+  
+  .item {
+    max-width: 50%;
+    float: left;
+    margin-bottom: 1em;
+    display: block;
+  }
+  
+  .item:nth-of-type(2n+1) {
+    clear: left;
+  }
+  
+  /* CSS Grid */
+  .containerbox {
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    grid-template-areas:
+      "header header header"
+      "main main main"
+      "gallery gallery gallery"
+      "footer footer footer";
+  }
+  
+  .main {
+    grid-area: main;
+  }
+  
+  .gallery {
+    grid-area: gallery;
+  }
+  
+  .gallery ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    grid-gap: 1em;
+  }
+  
+  /* hr tag customization */
+  
+  .threats-sec-2 hr{
+    color: black;
+    width:  450px;
+    height: 100%;
+  }
+  
+  .section-3{
+    background-color: #000;
+  }
+  
+  .section-3 hr{
+    width: 100%;
+    
+  }
+  .section-3 h1{
+    color: rgb(255, 255, 255);
+    padding-left: 700px;
+    
+  }
+  .section-3 p{
+    width: 100%;
+    color: white;
+    justify-content: center;
+    align-items: center; 
+    
+  }
+  .section-4{
+    background-color: white;
+  }
+  .section-4 hr{
+    width: 100%;
+  }
+  .section-4 h1{
+    color: rgb(0, 0, 0);
+    padding-left: 760px;
+  
+  }
+  .section-4 p{
+    width: 100%;
+    color: white;
+    padding-left: 500px;
+  }
+  .section-4 ol{
+    text-align: left;
+    padding-left: 35px;
+  }
+  
+  .section-4 ul{
+    text-align: left;
+    padding-left: 35px;
+  }
+/* third section */
+.banner-3{
+    width : 100%;
+    margin : auto;
+    padding : 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:rgb(3, 163, 184) ;
+   
+}
+
+.banner-3 figure{
+    flex: 1 0 200px;
+    width: auto; height: auto;
+    margin: 12px;
+    transition: all 300ms;
+   
+   
+}
+
+.banner-3 figure:hover{
+    box-shadow:  0px 2px 40px;
+    width: auto; height :  auto;
+}
+
+.banner-3 ul li{
+    margin: 0 20px;
+    position: relative;
+}
+.banner-3 a{
+    text-decoration: none;
+    margin-top: 200spx;
+    width: 50%;
+    text-align: center;
+    padding: 5px;
+    font-size: 23px;
+  
+}
+
+.banner-3 p{
+    font-weight: 400;
+    margin: 0 50px;
+    line-height: 30px;
+    text-align: justify;
+   
+}
+
+.p2{
+    width: auto;
+    height: auto;
+    text-align: left;
+ 
+}
+
+.banner-4{
+    width : 100%;
+    margin : auto;
+    padding : 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:rgba(3, 163, 184, 0.671) ;
+}
+
+
+.banner-4 figure{
+    flex: 1 0 200px;
+    width: auto; 
+    height: auto;
+    margin: 12px;
+    transition: all 300ms;
+   
+}
+
+.banner-4 figure:hover{
+    box-shadow:  0px 10px 40px;
+    width: auto; height :  auto;
+}
+
+.banner-4 ul li{
+    margin: 0 20px;
+    position: relative;
+}
+
+.banner-4 a{
+    text-decoration: none;
+    margin-top: 200px;
+    width: 50%;
+    text-align: center;
+    padding: 5px;
+    font-size: 23px;
+   
+}
+
+.banner-4 p{
+    font-weight: 400;
+    margin: 0 60px;
+    line-height: 30px;
+    text-align: justify;
+   
+}
+
+.banner-5 p{
+    margin: 0 60px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: justify;
+    
+}
+
+.banner-5{
+    width : 100%;
+    margin : auto;
+    padding : 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:rgba(3, 163, 184, 0.37) ;
+   
+}
+
+.banner-5 figure{
+    flex: 1 0 200px;
+    width: auto; height: auto;
+    margin: 12px;
+    transition: all 300ms;
+   
+}
+
+.banner-5 figure:hover{
+    box-shadow:  0px 10px 40px;
+    width: auto; height :  auto;
+}
+
+.banner-5 ul li{
+    margin: 0 20px;
+    position: relative;
+}
+
+.banner-5 a{
+    text-decoration: none;
+    margin-top: 200px;
+    width: 50%;
+    text-align: center;
+    padding: 5px;
+    font-size: 23px;
+   
+}
+
+.banner-3 img,
+.banner-4 img,
+.banner-5 img{
+    width: 500px;
+} 
+  
+  
+  
+  
+  /* Flexbox */
+  
+  
+  .gallery ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  
+  .gallery ul li {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 calc(50% - 1em);
+    flex: 0 1 calc(50% - 1em);
+    -ms-flex-preferred-size: calc(50% - 1em);
+    flex-basis: calc(50% - 1em);
+  }
+  
+  
+  /* Media Queries */
+  @media (max-width: 824px) {
+    .gallery ul {
+      grid-template-columns: 100%;
+    }
+  
+    .gallery ul li {
+      -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+    }
+  
+    .item {
+      max-width: 100%;
+      float: none;
+    }
+  }
+   /* footer */
+   .containerr{
+    max-width: 1170px;
+    margin:auto;
+  }
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  ul{
+    list-style: none;
+  }
+  .footer{
+    background-color: #24262b;
+      padding: 70px 0;
+  }
+  .footer-col{
+     width: 25%;
+     padding: 0 15px;
+  }
+  .footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+  }
+  .footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+  }
+  .footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+  }
+  .footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  .footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+  }
+  .footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+  .footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+  }
+  
+  /*responsive*/
+  @media(max-width: 767px){
+    .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+  }
+  }
+  @media(max-width: 574px){
+    .footer-col{
+      width: 100%;
+  }
+  }
+  /* references 
+  Unsplash (2022). Beautiful Free Images & Pictures. [online] Unsplash.com. Available at: https://unsplash.com/.
+Pexels (2023). Free Stock Photos. [online] Pexels.com. Available at: https://www.pexels.com/.
+Tripadvisor. (n.d.). Kosgoda, Sri Lanka 2023: Best Places to Visit. [online] Available at: https://www.tripadvisor.com/Tourism-g499082-Kosgoda_Galle_District_Southern_Province-Vacations.html [Accessed 29 May 2023].
+
+Tripadvisor. (n.d.). Turtle Hatchery Hikkaduwa - All You Need to Know BEFORE You Go. [online] Available at: https://www.tripadvisor.com/Attraction_Review-g304134-d3183957-Reviews-Turtle_Hatchery_Hikkaduwa-Hikkaduwa_Galle_District_Southern_Province.html.
+www.thrillophilia.com. (n.d.). Turtle Hatchery, Bentota: How To Reach, Best Time & Tips. [online] Available at: https://www.thrillophilia.com/attractions/turtle-hatchery.
+
+  
+  
+  
+  
+  
+
+

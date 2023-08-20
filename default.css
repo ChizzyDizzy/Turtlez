@@ -1,0 +1,90 @@
+* {
+    font-family: 'Poppins', sans-serif;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin: 0;
+
+    /* box-sizing: border-box; */
+}
+
+html,
+body{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    scroll-padding-top: 51px;
+}
+
+html::-webkit-scrollbar{
+    top: 20px;
+    width: 11px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #2e3131;
+    border-radius: 20px;
+    border: 3px solid #fff;
+    background-clip: content-box;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+body{
+    background-image: url('images/qwert.webp');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+hr {
+    height: 2.5px;
+    background-color: rgb(155, 135, 135);
+    border: none;
+    border-radius: 100px;
+    margin: 20px auto;
+    width: 250px;
+    position: relative;
+}
+
+/**************** button ****************/
+.button-for-all {
+    border: none;
+    background-color: var(--primary-black);
+    color: var(--primary-white);
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 0;
+    cursor: pointer;
+    transition: all 0.3s ease, background-color 0.3s ease;
+}
+
+.button-for-all a {
+    color: var(--primary-white);
+}
+
+.button-for-all:hover {
+    background-color: rgb(155, 135, 135);
+    border-radius: 50px;
+}
+
+.button-for-all:active {
+    transform: scale(0.95);
+}
+
+.button-for-all span {
+    vertical-align: middle;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.button-for-all:hover span {
+    animation: vanish 0.5s forwards;
+}
+/**************** button ****************/
