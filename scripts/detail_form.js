@@ -1,4 +1,4 @@
-import { flagListArray } from "/scripts/countries.js";
+import { flagListArray } from "../scripts/countries.js";
 import { ticketCategories } from "../scripts/ticketCategories.js";
 
 const form = document.getElementById("form");

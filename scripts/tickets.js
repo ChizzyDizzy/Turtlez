@@ -1,6 +1,6 @@
-import { ticketCategories } from '/scripts/ticketCategories.js';
-import { peakHours } from '/scripts/peakHours.js';
-import { updateSelection } from '/scripts/dropdown.js';
+import { ticketCategories } from '../scripts/ticketCategories.js';
+import { peakHours } from '../scripts/peakHours.js';
+import { updateSelection } from '../scripts/dropdown.js';
 
 /**************** update time ****************/
 function updateCurrentTime(){

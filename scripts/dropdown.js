@@ -1,5 +1,5 @@
-import { updateTotalBillAndCounts, tableCategoryUpdate } from '/scripts/tickets.js';
-import { ticketCategories } from '/scripts/ticketCategories.js';
+import { updateTotalBillAndCounts, tableCategoryUpdate } from '../scripts/tickets.js';
+import { ticketCategories } from '../scripts/ticketCategories.js';
 
 function toggleDropdown() {
     const dropdownContent = document.querySelector('.dropdown-content');
