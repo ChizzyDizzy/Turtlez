@@ -32,20 +32,20 @@
                     <form id="credit-card">
                     <div class="number-container">
                         <label>Card Number</label>
-                        <input type="text" name="card-number" id="card-number" maxlength="19" placeholder="1234 1234 1234 1234" required onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                        <input type="text" name="card-number" id="card-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx" required onkeypress="return event.charCode >= 48 && event.charCode <= 57">
                     </div>
                     <div class="name-container">
                         <label>Holder</label>
-                        <input type="text" name="name-text" id="name-text" maxlength="30" placeholder="Elliot Alderson" required onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || event.key == ' '">
+                        <input type="text" name="name-text" id="name-text" maxlength="30" placeholder="Ted Bundy Tepes" required onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || event.key == ' '">
                     </div>
                     <div class="infos-container">
                         <div class="expiration-container">
                         <label>Valid-thru</label>
-                        <input type="text" name="valid-thru-text" id="valid-thru-text" maxlength="5" placeholder="01/30" required onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                        <input type="text" name="valid-thru-text" id="valid-thru-text" maxlength="5" placeholder="04/01" required onkeypress="return event.charCode >= 48 && event.charCode <= 57">
                         </div>
                         <div class="cvv-container">
                         <label>CVV</label>
-                        <input type="text" name="cvv-text" id="cvv-text" maxlength="4" placeholder="1234" required onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                        <input type="text" name="cvv-text" id="cvv-text" maxlength="4" placeholder="xxxx" required onkeypress="return event.charCode >= 48 && event.charCode <= 57">
                         </div>
                     </div>
                         <input type="submit" value="PAY $" id="add">
@@ -56,7 +56,7 @@
                     <div class="detail-table-section">
                         <div>
                             <br>
-                            <h2>Summary Table</h2>
+                            <h2>Summary</h2>
                             <br>
                         </div>
                         <table class="main-table">
