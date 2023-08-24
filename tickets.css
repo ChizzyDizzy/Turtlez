@@ -378,7 +378,7 @@
 }
 
 .select-box {
-    background-color: rgb(155, 135, 135);
+    background-color:  #0077be;
     display: flex;
     align-items: center;
     padding: 10px;
@@ -387,7 +387,7 @@
 }
 
 .select-box:hover{
-    box-shadow: 0 0 20px 0px rgba(62, 140, 143, 0.7);
+    box-shadow: 0 0 20px 0px rgba(97, 146, 187, 0.7);
 }
 
 .selected-text {
@@ -506,7 +506,7 @@ tbody .middle-title:nth-child(odd) {
 
 .middle-title,
 tfoot td{
-    background-color:rgb(155, 135, 135);
+    background-color: #0077be;
     color: var(--primary-white);
 }
 
