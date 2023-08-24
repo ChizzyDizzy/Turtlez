@@ -53,6 +53,62 @@ hr {
     position: relative;
 }
 
+.logo{
+    width:120px;
+    cursor:pointer;
+    float: left;
+    line-height: 200px;
+   
+
+
+}
+.wrapper{
+    width: 70px;
+    margin:auto;
+}
+.menu-area{
+    margin-top: 0px;
+    display: flex;
+}
+.menu-area ul{
+    background: none;
+    list-style: none;
+    position: relative;
+    text-transform: uppercase;
+}
+.menu-area ul li{
+    display: inline-block;
+
+}
+.menu-area ul li a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 5px 55px;
+    font-weight: bold;
+}
+.menu-area ul li:hover{
+    background: #0ae9e9d7;
+}
+.menu-area ul li:hover > ul{
+    display: block;
+}
+.menu-area ul ul{
+    display: none;
+    position: absolute;
+    top: 100%;
+    background: #219696;
+}
+.menu-area ul ul li{
+    position: relative;
+    display: block;
+    border-bottom: 1px solid #ffffff;
+}
+.menu-area ul ul ul{
+    position: absolute; 
+    left: 100%;
+    top: 0;
+}
 /**************** button ****************/
 .button-for-all {
     border: none;

@@ -4,7 +4,7 @@ import { updateSelection } from '../scripts/dropdown.js';
 
 /**************** update time ****************/
 function updateCurrentTime(){
-    const calendarTime = document.querySelector('.js-calendear-time');
+    // const calendarTime = document.querySelector('.js-calendear-time');
 
     const currentTime = new Date();
     let hours = currentTime.getHours();
@@ -17,7 +17,7 @@ function updateCurrentTime(){
 
     const timeString = `${hours}:${minutes}:${seconds} ${ampm}`;
 
-    calendarTime.textContent = timeString;
+    // calendarTime.textContent = timeString;
 }
 
 updateCurrentTime();
@@ -156,10 +156,8 @@ function ticketCountHTML(){
                 <div class="ticket-count-category">
                     <span>${category.name}</span>
                     <br>
-                    <span class="category-tag">${category.tag}</span>
                 </div>
                 <div class="ticket-count-counter">
-                    <span id="${category.reset_id}" class="material-symbols-rounded reset-icon js-add-remove" >Refresh</span>
                     <span id="${category.remove_id}" class="material-symbols-rounded js-add-remove" >Remove</span>
                     <span class="count-number ${category.id}" data-ticket-counter="ticket-counter">${category.counter}</span>
                     <span id="${category.add_id}" class="material-symbols-rounded js-add-remove" ">Add</span>

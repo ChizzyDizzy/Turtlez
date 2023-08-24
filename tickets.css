@@ -105,9 +105,8 @@
 
 /**************** ticket page: date section ****************/
 .ticket-date-main-wrapper{
-    background-color: rgb(139, 0, 0);
+    background-color: #0077be;
     max-width: 450px;
-    border-radius: 10px;
 }
 
 .ticket-date-calendar-header{
@@ -229,19 +228,16 @@
     top: 50%;
     left: 50%;
     z-index: -1;
-    border-radius: 50%;
     transform: translate(-50%, -50%);
     transition: 0.15s ease;
 }
 
 .days li:hover::before{
     background: var(--primary-white);
-    box-shadow: 0 0 20px 0px rgba(239, 239, 239, 0.7);
 }
 
 .days .clicked::before{
-    background: var(--celadon);
-    box-shadow: 0 0 20px 0px rgba(174, 207, 164, 0.7);
+    background: var(--primary-white);
 }
 
 .ticket-date-calendar-body hr{
@@ -335,14 +331,13 @@
     font-size: 1.5rem;
     text-align: center;
     line-height: 38px;
-    border-radius: 50%;
     transition: 0.15s ease;
     color: var(--primary-black);
-    background: rgb(139, 0, 0);
+    background: #0077be;
 }
 
 .ticket-count-main-wrapper .material-symbols-rounded:hover{
-    box-shadow: 0 0 20px 0px rgba(62, 140, 143, 0.7);
+    box-shadow: 0 0 20px 0px rgba(7, 114, 185, 0.3);
 }
 
 .ticket-count-main-wrapper .reset-icon{
@@ -775,17 +770,17 @@ tfoot td{
 }
 
 .details-form-inputbox.error input{
-    border-color: rgb(139, 0, 0);
+    border-color: #0077be;
 }
 
 .details-form-inputbox .error{
-    color: rgb(139, 0, 0);
+    color: #0077be;
     font-size: 9px;
     height: 13px;
 }
 
 .details-form-inputbox.error input ~ span{
-    background: rgb(139, 0, 0);
+    background: #0077be;
 }
 
 .details-form-inputbox.success input ~ span{
